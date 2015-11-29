@@ -1,0 +1,7 @@
+{
+    "conString": "cushty@tcp(localhost:3306)/c9",
+    "fromTableName": "liExperience",
+    "toTableName": "liExperience_new",
+    "threads": 5,
+    "packSize": 3
+}
