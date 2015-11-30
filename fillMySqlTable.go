@@ -4,7 +4,7 @@ import "fmt"
 import "database/sql"
 import _ "github.com/go-sql-driver/mysql"
 import "strconv"
-// import "time"
+import "time"
 import "encoding/json"
 import "os"
 
@@ -38,6 +38,8 @@ func main() {
         go processWorker(c, r);
     }
     commandWorker(c)
+    
+    time.Sleep(time.Second * 10)
     
     fmt.Println("Done!")
 }
